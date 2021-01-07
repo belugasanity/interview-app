@@ -19,6 +19,7 @@ export class WeatherComponent implements OnInit {
     let city = 'London';
     this.weatherService.getWeatherByCity(city).subscribe((data) => {
       console.log(`${JSON.stringify(data)}`);
+      // TODO: Display temp, humidity and description in the view
     });
   }
 
